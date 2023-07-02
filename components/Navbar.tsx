@@ -1,6 +1,8 @@
 import { Bars3Icon, XMarkIcon, UserIcon } from "@heroicons/react/24/solid";
 import { BsSafe, BsCalculator } from "react-icons/bs";
 import Link from "next/link";
+import {app} from '../lib/firebase';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 
 export default function Navbar() {
   return (
