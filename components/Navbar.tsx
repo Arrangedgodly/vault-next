@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-300 p-5">
+    <div className="navbar bg-base-300 p-5 w-screen">
       <div className="flex-none">
-        <label className="btn btn-circle swap swap-rotate">
+        <label className="btn btn-circle btn-ghost swap swap-rotate">
           <input type="checkbox" />
           <Bars3Icon className="w-6 h-6 swap-off" />
           <XMarkIcon className="w-6 h-6 swap-on" />
@@ -21,11 +21,11 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex-none">
-        <button className="btn btn-square btn-ghost">
-          <Link href="/profile">
+        <Link href="/profile">
+          <button className="btn btn-circle btn-ghost">
             <UserIcon className="w-6 h-6" />
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </div>
   );
